@@ -1,0 +1,35 @@
+@import '../style/settings/fonts';
+@import '../style/settings/colors';
+
+.stats{
+    background-color: $color-gold;
+    position: relative;
+    top: -2rem;
+
+    .boxes{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 46px 0 86px 0;
+        .box{
+            width: 342px;
+            text-align: center;
+            color: $text-black;
+            font-family: $font-base;
+            .boxTop{
+                font-size: 90px;
+            }
+            .boxMid{
+                font-size: 18px;
+                margin: 16px 0 20px 0;
+                letter-spacing: -0.36px;
+                
+            }
+            .boxBot{
+             font-family: $font-alt;
+             letter-spacing: -0.36px;
+            }
+        }
+    }
+
+}

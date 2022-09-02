@@ -1,0 +1,87 @@
+@import '../style/settings/colors';
+@import '../style/settings/fonts';
+
+.helpContainer{
+    width: 1200px;
+    height: 740px;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-family: $font-alt;
+    img{
+        width: 253px;
+        height: 33px;
+        align-self: center;
+        margin-top: 25px;
+    }
+    .buttons{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button{
+            background-color: transparent;
+            font-size: 24px;
+            border: none;
+            width: 200px;
+            margin: 0 50px;
+            cursor: pointer;
+            padding: 15px;
+        }
+        .active{
+            // padding: 15px;
+            border: 1px solid black;
+        }
+    }
+    .headers{
+        margin-top: 40px;
+        width: 640px;
+        height: 94px;
+        font-size: 22px;
+        text-align: center;
+        align-self: center;
+    }
+    .lists{
+        margin-top: 70px;
+        .listsElements{ 
+            width: auto;
+            height: 60px;
+            border-bottom: 1px solid 
+            black;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .element{
+                font-size: 16px;
+                text-align: start;
+            }
+            .title{
+                align-self: flex-end;
+            }
+            .text{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-size: 12px;
+            }
+            .par{ 
+                grid-column: 2/3;
+                grid-row: 2/3;
+                text-align: end;
+                align-self: flex-start;
+            }
+
+        }
+        
+    }
+    .paginBtn{
+        background-color: transparent;
+        margin: 20px 10px;
+        width: 40px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

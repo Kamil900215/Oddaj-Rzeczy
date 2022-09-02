@@ -1,0 +1,40 @@
+@import "./reset/_reset.scss";
+@import "../home/home";
+@import "../stats/stats";
+@import "../steps/steps";
+@import "../aboutus/_aboutus.scss";
+@import "../help/_help.scss";
+@import "../contact/contact";
+@import "../login/login";
+
+.navigation{
+    font-family: $font-base;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 32px 142px 0 0 ;
+    .account_items{
+        .account_item{
+            font-size: 14px;
+            text-decoration: none;
+            padding: 9px 10px;
+            color: $text-gray;
+        }
+        .create{
+            border: 1px solid $color-gold;
+        }
+    }
+    .nav_btns{
+        width: 623px;
+        display: flex;
+        justify-content: space-between;
+        .nav_btn{
+            margin-top: 25px;
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+}

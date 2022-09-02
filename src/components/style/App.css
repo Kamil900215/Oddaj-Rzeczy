@@ -1,0 +1,572 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  margin-right: 142px;
+  display: flex;
+}
+.container .homeImg {
+  height: 963px;
+  width: 963px;
+  background-color: rgb(255, 0, 0);
+  background-image: url("../../assets/assets/Home-Hero-Image.jpg");
+  background-position: -28rem -2rem;
+  background-size: cover;
+}
+.container .homeRight {
+  width: 873px;
+  height: 963px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .homeRight .navbar {
+  width: 683px;
+  height: 95px;
+  align-self: flex-end;
+  margin-top: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.container .homeRight .navbar .navigation {
+  width: 683px;
+  height: 42px;
+}
+.container .homeRight .navbar .navigation .navigation_items {
+  display: flex;
+  justify-content: end;
+}
+.container .homeRight .navbar .navigation .navigation_items .active {
+  border: 1px solid black;
+}
+.container .homeRight .navbar .navigation .navigation_items .navigation_item {
+  padding: 9px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #3C3C3C;
+}
+.container .homeRight .navbar .navigation .navigation_items .navigation_item:hover {
+  cursor: pointer;
+}
+.container .homeRight .siteTitle {
+  width: 674px;
+  height: 250px;
+  margin: 200px 0 65px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #3C3C3C;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+.container .homeRight .siteTitle .decoration {
+  margin-top: 15px;
+}
+.container .homeRight .siteTitle .senditems {
+  width: 674px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.container .homeRight .siteTitle .senditems .btn {
+  background: none;
+  font-size: 24px;
+  width: 250px;
+  height: 120px;
+  font-family: "Open Sans", sans-serif;
+}
+.container .homeRight .siteTitle .senditems .btn:hover {
+  cursor: pointer;
+}
+
+.stats {
+  background-color: #FAD648;
+  position: relative;
+  top: -2rem;
+}
+.stats .boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 46px 0 86px 0;
+}
+.stats .boxes .box {
+  width: 342px;
+  text-align: center;
+  color: #3C3C3C;
+  font-family: "Open Sans", sans-serif;
+}
+.stats .boxes .box .boxTop {
+  font-size: 90px;
+}
+.stats .boxes .box .boxMid {
+  font-size: 18px;
+  margin: 16px 0 20px 0;
+  letter-spacing: -0.36px;
+}
+.stats .boxes .box .boxBot {
+  font-family: "Merriweather", serif;
+  letter-spacing: -0.36px;
+}
+
+.steps {
+  height: 624px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.steps .decor {
+  margin: 15px 0 15px 0;
+}
+.steps .stepsBoxes {
+  background-color: #F0F1F1;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 352px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.steps .stepsBoxes .stepBox {
+  width: 130px;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps .stepsBoxes .stepBox:first-child .stepTop {
+  background-image: url("../../assets/assets/Icon-1.svg");
+  width: 83px;
+  height: 83px;
+}
+.steps .stepsBoxes .stepBox:nth-child(2) .stepTop {
+  background-image: url("../../assets/assets/Icon-2.svg");
+  width: 83px;
+  height: 83px;
+}
+.steps .stepsBoxes .stepBox:nth-child(3) .stepTop {
+  background-image: url("../../assets/assets/Icon-3.svg");
+  width: 83px;
+  height: 83px;
+}
+.steps .stepsBoxes .stepBox:last-child .stepTop {
+  background-image: url("../../assets/assets/Icon-4.svg");
+  width: 83px;
+  height: 83px;
+}
+.steps .stepsBoxes .stepBox .stepMid {
+  margin: 8px 0 6px 0;
+  font-size: 16px;
+}
+.steps .stepsBoxes .stepBox .stepBot {
+  font-size: 14px;
+}
+.steps .btn {
+  margin-top: 35px;
+  background: none;
+  font-size: 24px;
+  width: 250px;
+  height: 120px;
+  font-family: "Open Sans", sans-serif;
+}
+.steps .btn:hover {
+  cursor: pointer;
+}
+
+.aboutus {
+  width: 100%;
+  height: 100vh;
+  background-color: #F0F1F1;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+.aboutus .aboutusText {
+  margin-top: 186px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 958px;
+}
+.aboutus .aboutusText .aboutusTitle {
+  font-size: 38px;
+}
+.aboutus .aboutusText .decor {
+  margin: 26px 0 55px 0;
+}
+.aboutus .aboutusText .aboutusDesc {
+  text-align: center;
+  width: 450px;
+}
+.aboutus .aboutusText .signature {
+  align-self: flex-end;
+  margin: 30px 40px 0 0;
+}
+.aboutus .aboutusImg {
+  width: 942px;
+}
+
+.helpContainer {
+  width: 1200px;
+  height: 740px;
+  margin: auto;
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+}
+.helpContainer img {
+  width: 253px;
+  height: 33px;
+  align-self: center;
+  margin-top: 25px;
+}
+.helpContainer .buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.helpContainer .buttons .button {
+  background-color: transparent;
+  font-size: 24px;
+  border: none;
+  width: 200px;
+  margin: 0 50px;
+  cursor: pointer;
+  padding: 15px;
+}
+.helpContainer .buttons .active {
+  border: 1px solid black;
+}
+.helpContainer .headers {
+  margin-top: 40px;
+  width: 640px;
+  height: 94px;
+  font-size: 22px;
+  text-align: center;
+  align-self: center;
+}
+.helpContainer .lists {
+  margin-top: 70px;
+}
+.helpContainer .lists .listsElements {
+  width: auto;
+  height: 60px;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.helpContainer .lists .listsElements .element {
+  font-size: 16px;
+  text-align: start;
+}
+.helpContainer .lists .listsElements .title {
+  align-self: flex-end;
+}
+.helpContainer .lists .listsElements .text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 12px;
+}
+.helpContainer .lists .listsElements .par {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: end;
+  align-self: flex-start;
+}
+.helpContainer .paginBtn {
+  background-color: transparent;
+  margin: 20px 10px;
+  width: 40px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactContainer .contactImg {
+  background-image: url("../../assets/assets/Background-Contact-Form.jpg");
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+  position: relative;
+  z-index: 0;
+  left: -5%;
+}
+.contactContainer .contactRight {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer .contactRight .text {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+}
+.contactContainer .contactRight .text .decor {
+  width: 253px;
+  height: 33px;
+  margin: 15px 0 15px 0;
+}
+.contactContainer .contactRight .submitSuccess {
+  color: green;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.contactContainer .contactForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+}
+.contactContainer .contactForm .fcbIcon {
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: -12%;
+  right: 15px;
+}
+.contactContainer .contactForm .igIcon {
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: -12%;
+}
+.contactContainer .contactForm .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 22px);
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  row-gap: 15px;
+}
+.contactContainer .contactForm .nameLabel {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.contactContainer .contactForm .name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.contactContainer .contactForm .nameError {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.contactContainer .contactForm .emailLabel {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.contactContainer .contactForm .email {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.contactContainer .contactForm .emailError {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.contactContainer .contactForm .messageLabel {
+  margin-top: 9px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+.contactContainer .contactForm .message {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+.contactContainer .contactForm .textarea {
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+.contactContainer .contactForm .messageError {
+  grid-row: 8/9;
+  grid-column: 1/3;
+}
+.contactContainer .contactForm .labels {
+  font-size: 16px;
+  font-weight: 600;
+}
+.contactContainer .contactForm .inputs,
+.contactContainer .contactForm .textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  height: 25px;
+}
+.contactContainer .contactForm .textarea {
+  height: 100px;
+}
+.contactContainer .contactForm .submitContact {
+  border: 0.75px solid black;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  position: relative;
+  top: 100px;
+}
+.contactContainer .contactForm .submitContact:hover {
+  cursor: pointer;
+}
+.contactContainer .contactForm .error {
+  font-size: 12px;
+  color: red;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #3C3C3C;
+  font-family: "Open Sans", sans-serif;
+}
+.login .title {
+  font-size: 40px;
+}
+.login img {
+  margin: 25px 0 60px 0;
+}
+.login .login_form {
+  width: 385px;
+  height: 235px;
+  background-color: #F0F1F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login .login_form .forms {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.login .login_form .forms input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.login .bottom_btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 504px;
+}
+.login .bottom_btns .bottom_btn {
+  font-size: 18px;
+  padding: 13px 15px;
+  cursor: pointer;
+}
+.login .bottom_btns .logme {
+  border: 1px solid gold;
+}
+
+.navigation {
+  font-family: "Open Sans", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 32px 142px 0 0;
+}
+.navigation .account_items .account_item {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 9px 10px;
+  color: #737373;
+}
+.navigation .account_items .create {
+  border: 1px solid #FAD648;
+}
+.navigation .nav_btns {
+  width: 623px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .nav_btns .nav_btn {
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */

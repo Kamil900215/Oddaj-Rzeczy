@@ -1,0 +1,148 @@
+.contactContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .contactImg{
+        background-image: url("../../assets/assets/Background-Contact-Form.jpg");
+        width: 100%;
+        height: 100vh;
+        opacity: 0.2;
+        position: relative;
+        z-index: 0;
+        left: -5%;
+    }
+    .contactRight{
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text{
+            text-align: center;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 38px;
+            .decor{
+                width: 253px;
+                height: 33px;
+                margin: 15px 0 15px 0;
+            }
+        }
+        .submitSuccess{
+            color: green;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+    }
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-end;
+        .fcbIcon{
+            width: 30px;
+            height: 30px;
+            align-self: flex-end;
+            position: absolute;
+            bottom: -12%;
+            right: 15px;
+        }
+        .igIcon{
+            width: 30px;
+            height: 30px;
+            align-self: flex-end;
+            position: absolute;
+            bottom: -12%;
+        }
+        .form{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(10, 22px);
+            column-gap: 14px;
+            row-gap: 15px;
+        }
+        .nameLabel{
+            grid-column: 1 / 2;
+            grid-row: 1/2;
+        }
+        .name{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .nameError{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .emailLabel{
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+        .email{
+            grid-column: 2/3;
+            grid-row: 2/3; 
+        }
+        .emailError{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .messageLabel{
+            margin-top: 9px;
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+        .message{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+        
+        .textarea{
+            grid-row: 5/6;
+            grid-column: 1/3;
+        }
+        .messageError{
+            grid-row: 8/9;
+            grid-column: 1/3;
+        }
+        .labels{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .inputs, 
+        .textarea{
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            resize: none;
+            overflow: hidden;
+            height: 25px;
+        }
+        .textarea{
+            height: 100px;
+        }
+        
+        .submitContact{
+            border: 0.75px solid black;
+            background-color: transparent;
+            width: 150px;
+            height: 50px;
+            margin-top: 40px;
+            grid-row: 5/6;
+            grid-column: 2/3;
+            position: relative;
+            top: 100px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+        .error{
+            font-size: 12px;
+            color: red;
+        }
+        
+    }
+}
