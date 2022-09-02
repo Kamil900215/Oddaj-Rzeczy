@@ -562,11 +562,14 @@ table {
   width: 623px;
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 .navigation .nav_btns .nav_btn {
-  margin-top: 25px;
   background-color: transparent;
   border: none;
   font-size: 18px;
   cursor: pointer;
+}
+.navigation .nav_btns .nav_btn:hover {
+  border-bottom: 2px solid #FAD648;
 }/*# sourceMappingURL=App.css.map */

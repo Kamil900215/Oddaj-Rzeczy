@@ -4,7 +4,11 @@ import Login from "./login/Login"
 import Register from "./register/Register"
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import {Link as Scroll} from 'react-scroll';
+// import supabase from "./supabase/supabaseClient";
+
 function App() {
+
+  
 
   return (
     

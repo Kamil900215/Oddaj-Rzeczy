@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import decor from '../../assets/assets/Decoration.svg'
-import Login from '../login/Login'
+
 
 function Home() {
 
