@@ -1,0 +1,82 @@
+.stuffContainer{
+.topContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    font-family: $font-base;
+    .leftSide{
+        width: 1015px;
+        height: 853px;
+        background-image: url('../../assets/assets/Form-Hero-Image.jpg');     
+    }
+    .rightSide{
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            font-size: 38px;
+        }
+        .decor{
+            margin: 25px 0 20px 0;
+        }
+        .subTitle{
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        .squares{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            
+            .square{
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    border: 1px solid black;
+                    rotate: 45deg;
+                    width: 140px;
+                    height: 140px;
+                    z-index: 1;
+                }
+                .number{
+                    font-size: 32px;
+                    position: relative;
+                    top: -55px;
+                }
+                .descr{
+                    width: 100px;
+                    text-align: center;
+                    position: relative;
+                    top: -20px;
+                }
+                
+            }
+        }
+    }
+}
+.pageWarn{
+    height: 179px;
+    background-color: $color-yellow-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+    font-family: $font-base;
+    .waningTitle{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .waningP{
+        font-size: 22px;
+    }
+}
+}

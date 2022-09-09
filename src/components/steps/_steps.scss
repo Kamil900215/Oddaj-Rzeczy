@@ -5,6 +5,8 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-size: 38px;
+    font-family: $font-base;
     .decor{
         margin: 15px 0 15px 0;
     }
@@ -18,7 +20,7 @@
         align-items: center;
         .stepBox{
             width: 130px;
-            height: 172px;
+            height: 200px;
             
             display: flex;
             flex-direction: column;
@@ -27,6 +29,7 @@
                 background-image: url("../../assets/assets/Icon-1.svg");
                 width: 83px;
                 height: 83px;
+                
             }
             &:nth-child(2) .stepTop{
                 background-image: url("../../assets/assets/Icon-2.svg");
@@ -53,12 +56,14 @@
         }
     }
     .btn{
-        margin-top: 35px;
+        margin: 35px 0 35px 0;
         background: none;
         font-size: 24px;
-        width: 250px;
-        height: 120px;
+        padding: 45px 45px;
         font-family: $font-base;
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
         &:hover{
             cursor: pointer;
         }

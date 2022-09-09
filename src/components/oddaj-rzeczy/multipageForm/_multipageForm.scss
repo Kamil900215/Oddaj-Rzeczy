@@ -1,0 +1,31 @@
+@import './components/whatyoudonate/whatYouDonate';
+@import './components/pickupadress/pickUpAdress';
+@import './components/howmanybags/howManyBags';
+@import './components/donatesummary/donateSummary';
+@import './components//localization/localization';
+
+.form{
+    font-family: $font-base;
+    background-color: $color-light-gray;
+    padding: 35px 142px;
+    .progress{
+        font-size: 24px;
+        margin-bottom: 70px;
+    }
+    .formContainer{
+       .header{
+        font-size: 36px;
+        font-weight: 600;
+       } 
+       .body{
+        margin: 40px 0 14px 0;
+       }
+    }
+    .donateBtn{
+        position: relative;
+        cursor: pointer;
+        border: 0.75px solid $text-black;
+        padding: 23px 63px;
+        margin-right: 58px;
+    }
+}

@@ -139,7 +139,6 @@ function Contact() {
             <a href="https://www.instagram.com/"><img src={ig} alt="" className='igIcon'/></a>
         </div>
         </div>
-       
     </div>
    </div>
   )

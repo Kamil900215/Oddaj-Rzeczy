@@ -1,0 +1,26 @@
+.pickUpAdressContainer{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    .leftContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+label{
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+}
+input, 
+textarea{
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+textarea{
+    height: 90px;
+}

@@ -1,7 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import decor from "../../assets/assets/Decoration.svg";
-
+import supabase from "../supabase/supabaseClient";
 const Steps = () => {
+
+    const [isLogged, setIsLogged] = useState(false);
+
+  useEffect(() =>{
+    const user =  supabase.auth.user()
+    if(user){
+     setIsLogged(true);
+    }
+  }, [])
+
   return (
     <div className='steps'>
         Wystarczą 4 proste kroki
@@ -37,7 +48,11 @@ const Steps = () => {
                     <div className="stepBot">kurier przyjedzie w dogodnym terminie</div>
                 </div> 
             </div>
-            <button className='btn'>ODDAJ RZECZY</button>
+            {isLogged ? (<Link to='/oddaj-rzeczy' className='btn'>ODDAJ RZECZY</Link>) : (
+            <Link to='/login' className='btn'>
+            ODDAJ RZECZY
+            </Link>
+            )}
         </div>
   )
 }

@@ -6,7 +6,10 @@
 @import "../help/_help.scss";
 @import "../contact/contact";
 @import "../login/login";
-
+@import "../register/register";
+@import "../logout/logout";
+@import "../oddaj-rzeczy/oddaj";
+@import "../oddaj-rzeczy/multipageForm/multipageForm";
 .navigation{
     font-family: $font-base;
     height: 50px;
@@ -14,6 +17,9 @@
     flex-direction: column;
     align-items: flex-end;
     margin: 32px 142px 0 0 ;
+    position: absolute;
+    z-index: 99;
+    right: 5px;
     .account_items{
         .account_item{
             font-size: 14px;
@@ -39,6 +45,32 @@
             &:hover{
                 border-bottom: 2px solid $color-gold;
             }
+        }
+    } 
+    .userTop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .userEmail{
+            // position: relative;
+            // right: 15px;
+            margin-right: 15px;
+        }
+        .giveStuffBtn{
+            background-color: transparent;
+            border: 1px solid $color-gold;
+            padding: 10px 8px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-black;
+        }
+        .logoutBtn{
+            background-color: transparent;
+            border: none;
+            padding: 10px 8px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-black;
         }
     }
 }

@@ -16,32 +16,32 @@ const pagination = [
             par: 'ubrania, jedzenie, ciepłe koce'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.2',
             text: 'element1',
             par: 'par1'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.2',
             text: 'element1',
             par: 'par1'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.3',
             text: 'element1',
             par: 'par1'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.4',
             text: 'element1',
             par: 'par1'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.5',
             text: 'element1',
             par: 'par1'
         },
         {
-            title: 'tytuł1',
+            title: 'tytuł1.6',
             text: 'element1',
             par: 'par1'
         },
@@ -49,49 +49,49 @@ const pagination = [
     ],
     [
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.1',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.2',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.3',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.4',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.5',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
         {
-            title: 'Ipsum2',
+            title: 'Ipsum2.6',
             text: 'Ipsum2',
             par: 'Ipsum2'
         },
     ],
     [
         {
-            title: 'Dolor3',
+            title: 'Dolor3.1',
             text: 'Dolor3',
             par: 'Dolor3'
         },
         {
-            title: 'Dolor3',
+            title: 'Dolor3.2',
             text: 'Dolor3',
             par: 'Dolor3'
         },
         {
-            title: 'Dolor3',
+            title: 'Dolor3.2',
             text: 'Dolor3',
             par: 'Dolor3'
         },

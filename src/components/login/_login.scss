@@ -10,48 +10,64 @@
     font-family: $font-base;
     .title{
         font-size: 40px;
-        
     }
     img{
         margin: 25px 0 60px 0
     }
-    .login_form{
+    .form_bacground{
+        background-color: $color-light-gray;
         width: 385px;
         height: 235px;
-        background-color: $color-light-gray;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+    }
         .forms{
             width: 250px;
+            height: 62px;
             display: flex;
             flex-direction: column;
+            
             input{
                 border: none;
                 outline: none;
                 background-color: transparent;
                 border-bottom: 1px solid black;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 cursor: pointer;
+                
             }
         }
-        
-        
     }
-    .bottom_btns{
+    .register{
+        text-decoration: none;
+        color: black;
+    }
+    .buttons{
+        margin-top: 40px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
-        width: 504px;
         .bottom_btn{
+            font-family: $font-base;
+            background-color: transparent;
             font-size: 18px;
-            padding: 13px 15px;
+            border: none;
             cursor: pointer;
+            .link{
+                text-decoration: none;
+                color: black;
+            }
         }
         .logme{
             border: 1px solid gold;
         }
-        
     }
-}
+   .formError{
+    color: red;
+    font-size: 12px;
+    padding-top: 15px;
+    position: relative;
+    top: -12px
+   }

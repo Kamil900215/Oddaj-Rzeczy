@@ -59,7 +59,6 @@ table {
 .container .homeImg {
   height: 963px;
   width: 963px;
-  background-color: rgb(255, 0, 0);
   background-image: url("../../assets/assets/Home-Hero-Image.jpg");
   background-position: -28rem -2rem;
   background-size: cover;
@@ -71,37 +70,7 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.container .homeRight .navbar {
-  width: 683px;
-  height: 95px;
-  align-self: flex-end;
-  margin-top: 37px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-.container .homeRight .navbar .navigation {
-  width: 683px;
-  height: 42px;
-}
-.container .homeRight .navbar .navigation .navigation_items {
-  display: flex;
-  justify-content: end;
-}
-.container .homeRight .navbar .navigation .navigation_items .active {
-  border: 1px solid black;
-}
-.container .homeRight .navbar .navigation .navigation_items .navigation_item {
-  padding: 9px 15px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  color: #3C3C3C;
-}
-.container .homeRight .navbar .navigation .navigation_items .navigation_item:hover {
-  cursor: pointer;
-}
-.container .homeRight .siteTitle {
+.container .siteTitle {
   width: 674px;
   height: 250px;
   margin: 200px 0 65px 0;
@@ -113,23 +82,23 @@ table {
   flex-direction: column;
   padding: 3px;
 }
-.container .homeRight .siteTitle .decoration {
+.container .siteTitle .decoration {
   margin-top: 15px;
 }
-.container .homeRight .siteTitle .senditems {
+.container .siteTitle .senditems {
   width: 674px;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
-.container .homeRight .siteTitle .senditems .btn {
+.container .siteTitle .senditems .btn {
   background: none;
   font-size: 24px;
   width: 250px;
   height: 120px;
   font-family: "Open Sans", sans-serif;
 }
-.container .homeRight .siteTitle .senditems .btn:hover {
+.container .siteTitle .senditems .btn:hover {
   cursor: pointer;
 }
 
@@ -169,6 +138,8 @@ table {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  font-size: 38px;
+  font-family: "Open Sans", sans-serif;
 }
 .steps .decor {
   margin: 15px 0 15px 0;
@@ -184,7 +155,7 @@ table {
 }
 .steps .stepsBoxes .stepBox {
   width: 130px;
-  height: 172px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,12 +188,14 @@ table {
   font-size: 14px;
 }
 .steps .btn {
-  margin-top: 35px;
+  margin: 35px 0 35px 0;
   background: none;
   font-size: 24px;
-  width: 250px;
-  height: 120px;
+  padding: 45px 45px;
   font-family: "Open Sans", sans-serif;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
 }
 .steps .btn:hover {
   cursor: pointer;
@@ -347,6 +320,7 @@ table {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 700px;
 }
 .contactContainer .contactImg {
   background-image: url("../../assets/assets/Background-Contact-Form.jpg");
@@ -354,12 +328,11 @@ table {
   height: 100vh;
   opacity: 0.2;
   position: relative;
-  z-index: 0;
+  z-index: -2;
   left: -5%;
 }
 .contactContainer .contactRight {
   width: 50%;
-  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,31 +359,30 @@ table {
 .contactContainer .contactForm {
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: flex-end;
+  width: 500px;
 }
 .contactContainer .contactForm .fcbIcon {
   width: 30px;
   height: 30px;
-  align-self: flex-end;
-  position: absolute;
-  bottom: -12%;
-  right: 15px;
+  position: relative;
+  right: 60px;
+  top: 93px;
 }
 .contactContainer .contactForm .igIcon {
   width: 30px;
   height: 30px;
-  align-self: flex-end;
-  position: absolute;
-  bottom: -12%;
+  position: relative;
+  right: 15px;
+  top: 60px;
 }
 .contactContainer .contactForm .form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, 22px);
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(10, 30px);
   -moz-column-gap: 14px;
        column-gap: 14px;
-  row-gap: 15px;
+  row-gap: 10px;
 }
 .contactContainer .contactForm .nameLabel {
   grid-column: 1/2;
@@ -504,41 +476,372 @@ table {
 .login img {
   margin: 25px 0 60px 0;
 }
-.login .login_form {
+.login .form_bacground {
+  background-color: #F0F1F1;
   width: 385px;
   height: 235px;
-  background-color: #F0F1F1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.login .login_form .forms {
+.login .forms {
   width: 250px;
+  height: 62px;
   display: flex;
   flex-direction: column;
 }
-.login .login_form .forms input {
+.login .forms input {
   border: none;
   outline: none;
   background-color: transparent;
   border-bottom: 1px solid black;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
-.login .bottom_btns {
+
+.register {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  margin-top: 40px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  width: 504px;
 }
-.login .bottom_btns .bottom_btn {
+.buttons .bottom_btn {
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
   font-size: 18px;
-  padding: 13px 15px;
+  border: none;
   cursor: pointer;
 }
-.login .bottom_btns .logme {
+.buttons .bottom_btn .link {
+  text-decoration: none;
+  color: black;
+}
+.buttons .logme {
   border: 1px solid gold;
+}
+
+.formError {
+  color: red;
+  font-size: 12px;
+  padding-top: 15px;
+  position: relative;
+  top: -12px;
+}
+
+.register {
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register .registerTitle {
+  font-size: 40px;
+}
+.register img {
+  margin: 25px 0 60px 0;
+  width: 253px;
+  height: 33px;
+}
+.register .registerForm {
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+}
+.register .registerForm .regContainer {
+  background-color: #F0F1F1;
+  width: 334px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register .registerForm .regContainer .regContent {
+  width: 240px;
+  align-self: center;
+  padding: 30px 25px;
+  font-size: 18px;
+}
+.register .registerForm .regContainer .regContent input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+}
+.register .registerForm .regError {
+  color: red;
+  font-size: 14px;
+  position: relative;
+  top: -24px;
+}
+.register .regBtns {
+  position: relative;
+  top: 30px;
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.register .regBtns .regBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 12px 8px;
+}
+.register .regBtns .log {
+  text-decoration: none;
+  color: black;
+}
+.register .regBtns .btnRegister {
+  border: 1px solid black;
+}
+
+.goHome {
+  text-decoration: none;
+  color: #3C3C3C;
+  border: 1px solid #3C3C3C;
+  padding: 15px 10px;
+}
+
+.title {
+  width: 600px;
+  text-align: center;
+}
+
+.stuffContainer .topContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+.stuffContainer .topContainer .leftSide {
+  width: 1015px;
+  height: 853px;
+  background-image: url("../../assets/assets/Form-Hero-Image.jpg");
+}
+.stuffContainer .topContainer .rightSide {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stuffContainer .topContainer .rightSide .title {
+  font-size: 38px;
+}
+.stuffContainer .topContainer .rightSide .decor {
+  margin: 25px 0 20px 0;
+}
+.stuffContainer .topContainer .rightSide .subTitle {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.stuffContainer .topContainer .rightSide .squares {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.stuffContainer .topContainer .rightSide .squares .square {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+}
+.stuffContainer .topContainer .rightSide .squares .square::before {
+  content: "";
+  position: absolute;
+  border: 1px solid black;
+  rotate: 45deg;
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+}
+.stuffContainer .topContainer .rightSide .squares .square .number {
+  font-size: 32px;
+  position: relative;
+  top: -55px;
+}
+.stuffContainer .topContainer .rightSide .squares .square .descr {
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.stuffContainer .pageWarn {
+  height: 179px;
+  background-color: #FAD648;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+  font-family: "Open Sans", sans-serif;
+}
+.stuffContainer .pageWarn .waningTitle {
+  font-size: 36px;
+  font-weight: 600;
+}
+.stuffContainer .pageWarn .waningP {
+  font-size: 22px;
+}
+
+.radioInputs {
+  display: flex;
+  flex-direction: column;
+}
+.radioInputs .radioLabel {
+  position: relative;
+  padding: 15px 30px;
+  bottom: 15px;
+}
+.radioInputs .radioLabel input {
+  display: none;
+}
+.radioInputs .radioLabel input:checked ~ span:after {
+  background-color: #FAD648;
+}
+.radioInputs .radioLabel span {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  left: 0px;
+  top: 12px;
+}
+.radioInputs .radioLabel span::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.pickUpAdressContainer {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+.pickUpAdressContainer .leftContainer {
+  display: flex;
+  flex-direction: column;
+}
+.pickUpAdressContainer .rightContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin: 15px 0 5px 0;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+textarea {
+  height: 90px;
+}
+
+.howManyBagsContainer {
+  height: 130px;
+}
+
+.donateSummaryContainer .donate {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.donateSummaryContainer .summary,
+.donateSummaryContainer .summaryLocalization {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.donateSummaryContainer .summary img,
+.donateSummaryContainer .summaryLocalization img {
+  height: 40px;
+  margin-right: 15px;
+}
+.donateSummaryContainer .summaryAdress {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.donateSummaryContainer .summaryAdress .pickUpAdress,
+.donateSummaryContainer .summaryAdress .summaryPickUpDate {
+  line-height: 30px;
+}
+
+.localizationDropdown {
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+.whoToHelp .whoToHelpTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.whoToHelp .inputsContainer {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.whoToHelp .inputsContainer .localInput {
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
+.whoToHelp .inputsContainer .localInput input {
+  display: none;
+}
+.whoToHelp .inputsContainer .localInput input[type=radio]:checked + .localInput {
+  background-color: orange;
+}
+.whoToHelp .inputsContainer .optionalFundName {
+  margin: 15px 0 15px 0;
+}
+.whoToHelp .inputsContainer .optionalFundName .optionalFundNameTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form {
+  font-family: "Open Sans", sans-serif;
+  background-color: #F0F1F1;
+  padding: 35px 142px;
+}
+.form .progress {
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+.form .formContainer .header {
+  font-size: 36px;
+  font-weight: 600;
+}
+.form .formContainer .body {
+  margin: 40px 0 14px 0;
+}
+.form .donateBtn {
+  position: relative;
+  cursor: pointer;
+  border: 0.75px solid #3C3C3C;
+  padding: 23px 63px;
+  margin-right: 58px;
 }
 
 .navigation {
@@ -548,6 +851,9 @@ table {
   flex-direction: column;
   align-items: flex-end;
   margin: 32px 142px 0 0;
+  position: absolute;
+  z-index: 99;
+  right: 5px;
 }
 .navigation .account_items .account_item {
   font-size: 14px;
@@ -572,4 +878,28 @@ table {
 }
 .navigation .nav_btns .nav_btn:hover {
   border-bottom: 2px solid #FAD648;
+}
+.navigation .userTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .userTop .userEmail {
+  margin-right: 15px;
+}
+.navigation .userTop .giveStuffBtn {
+  background-color: transparent;
+  border: 1px solid #FAD648;
+  padding: 10px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3C3C3C;
+}
+.navigation .userTop .logoutBtn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3C3C3C;
 }/*# sourceMappingURL=App.css.map */

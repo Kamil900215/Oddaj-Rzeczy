@@ -2,16 +2,13 @@
 @import '../style/settings/colors';
 .container{
     margin-right: 142px;
-    // height: 500px;
     display: flex;
     .homeImg{
         height: 963px;
         width: 963px;
-        background-color: rgb(255, 0, 0);
         background-image: url('../../assets/assets/Home-Hero-Image.jpg');
         background-position: -28rem -2rem;
         background-size: cover;
-        
     }
     .homeRight{
         width: 873px;
@@ -19,36 +16,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        .navbar{
-            width: 683px;
-            height: 95px;
-            align-self: flex-end;
-            margin-top: 37px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-end;
-           
-            .navigation{
-                width: 683px;
-                height: 42px;
-                .navigation_items{
-                    display: flex;
-                    justify-content: end;
-                    .active{
-                        border: 1px solid black;
-                    }
-                    .navigation_item{
-                        padding: 9px 15px;
-                        font-family: $font-base;
-                        font-size: 18px;
-                        color: $text-black;
-                        &:hover{
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
         }
         .siteTitle{
             width: 674px;
@@ -79,7 +46,6 @@
                         cursor: pointer;
                     }
                 }
-            }
         }
     }
 }

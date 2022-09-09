@@ -2,18 +2,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 700px;
     .contactImg{
         background-image: url("../../assets/assets/Background-Contact-Form.jpg");
         width: 100%;
         height: 100vh;
         opacity: 0.2;
         position: relative;
-        z-index: 0;
+        z-index: -2;
         left: -5%;
     }
     .contactRight{
         width: 50%;
-        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,29 +40,31 @@
     .contactForm{
         display: flex;
         flex-direction: column;
-        position: relative;
         align-items: flex-end;
+        width: 500px;
         .fcbIcon{
             width: 30px;
             height: 30px;
-            align-self: flex-end;
-            position: absolute;
-            bottom: -12%;
-            right: 15px;
+            position: relative;
+            // bottom: 80px;
+            right: 60px;
+            top: 93px;
         }
         .igIcon{
             width: 30px;
             height: 30px;
-            align-self: flex-end;
-            position: absolute;
-            bottom: -12%;
+            
+            position: relative;
+            right: 15px;
+            top: 60px;    
         }
         .form{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(10, 22px);
+            grid-template-columns: repeat(2, 100px);
+            grid-template-rows: repeat(10, 30px);
             column-gap: 14px;
-            row-gap: 15px;
+            row-gap: 10px;
+            
         }
         .nameLabel{
             grid-column: 1 / 2;

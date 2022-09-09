@@ -5,7 +5,7 @@ import sign from '../../assets/assets/Signature.svg';
 function AboutUs() {
   return (
     <div className='aboutus' id='aboutus'>
-        
+  
         <div className="aboutusText">
             <p className='aboutusTitle'>O nas</p>
             <div className='decor'><img src={decor} alt="" /></div>

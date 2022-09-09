@@ -1,0 +1,44 @@
+.localizationDropdown{
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.whoToHelp{
+    .whoToHelpTitle{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+   
+    .inputsContainer{
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 400px;
+        .localInput{
+            border: 1px solid black;
+            padding: 5px;
+            cursor: pointer;
+            input{
+                display: none;
+            }
+            input[type="radio"]:checked + .localInput{
+                background-color: orange;
+            }
+
+    }
+   
+    .optionalFundName{
+        margin: 15px 0 15px 0;
+        .optionalFundNameTitle{
+            
+            font-size: 18px;
+            font-weight: 500;
+            
+        }
+    }
+    
+    }
+    
+}
