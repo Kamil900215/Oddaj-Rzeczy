@@ -27,7 +27,7 @@ function PickUpAdress({ formValues, setFormValues }) {
       onChange={(e)=> setFormValues({...formValues, dateOfPickup: e.target.value})}
       />
       <label htmlFor="">Godzina</label>
-      <input type="nuber" 
+      <input type="time" 
        value={formValues.timeOfPickup}
        onChange={(e)=> setFormValues({...formValues, timeOfPickup: e.target.value})}
         />
