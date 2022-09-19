@@ -1,5 +1,5 @@
 # Oddaj-Rzeczy
-Webpage that helps to give some of your used things for charity organizastions.
+
 
 
 
