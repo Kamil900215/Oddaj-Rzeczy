@@ -1,4 +1,6 @@
 # Oddaj-Rzeczy
+Site to help charity organization collecting clothes, toys, books, furniture. 
+
 
 ## How it works
 Create account or sing in
@@ -19,5 +21,5 @@ HTML, SASS, React JS,
 
 Vite js, Supabase
 
-
+React Scroll, React Router Dom
 
