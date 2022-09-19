@@ -1,5 +1,7 @@
 # Oddaj-Rzeczy
 
+## How it works
+Create account or sing in
 
 
 
