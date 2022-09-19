@@ -6,7 +6,7 @@ Site to help charity organization collecting clothes, toys, books, furniture.
 Create account or sing in
 
 
-![](images/createAcc.png)
+![](images/pickmenu2.png)
 
 Go to give stuff menu by clicking button: 
 
