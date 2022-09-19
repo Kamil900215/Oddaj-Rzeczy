@@ -1,5 +1,5 @@
 # Oddaj-Rzeczy
-Site to help charity organization collecting clothes, toys, books, furniture. 
+Site to help charity organization collecting: clothes, toys, books, furniture. 
 
 
 ## How it works
